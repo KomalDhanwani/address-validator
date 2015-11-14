@@ -32,7 +32,7 @@ module AddressValidator
 
     attr_accessor :name, :street1, :city, :state, :zip, :country, :classification
 
-    def initialize(name: name, street1: street1, city: city, state: state, zip: zip, country: country, classification: classification)
+    def initialize(name: name(), street1: street1(), city: city(), state: state(), zip: zip(), country: country(), classification: classification())
       @name = name
       @street1 = street1
       @city = city
